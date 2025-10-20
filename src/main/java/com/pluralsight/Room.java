@@ -35,15 +35,26 @@ public class Room {
     }
 
     public boolean isAvailable() {
-        if (isOccupied || isDirty) {
-            return false;
-        } else {
-            return true;
+//        if (isOccupied || isDirty) {
+//            return false;
+//        }
+//        else {
+//            return true;
+//
+//        }
+//        return !(isOccupied || isDirty);
+        return (!isOccupied && !isDirty);
 
-        }
-        return !(isOccupied || isDirty);
+    }
 
-
-        
+    @Override
+    public String toString() {
+        return "Room{" +
+                "numberOfBeds=" + numberOfBeds +
+                ", price=" + price +
+                ", isOccupied=" + isOccupied +
+                ", isDirty=" + isDirty +
+                ", isAvailable=" + isAvailable() +
+            '}';
     }
 }

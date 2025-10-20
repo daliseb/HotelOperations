@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        System.out.println("Hello and welcome!");
 
         ArrayList<Room> rooms = new ArrayList<>();
 
@@ -18,7 +18,10 @@ public class Main {
         rooms.add(r103);
         rooms.add(r104);
 
-        for
-
+        for(Room r : rooms){
+            System.out.println(r);
+        }
+        Reservation res1 = new Reservation("king", 2, false);
+        System.out.println(res1);
     }
 }
